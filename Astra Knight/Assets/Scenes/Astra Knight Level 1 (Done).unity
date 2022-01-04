@@ -150,15 +150,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7423366379279327969, guid: 6953269087bc3d84681127802389c43a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27.16
+      value: -37.4
       objectReference: {fileID: 0}
     - target: {fileID: 7423366379279327969, guid: 6953269087bc3d84681127802389c43a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.95
+      value: 16.2
       objectReference: {fileID: 0}
     - target: {fileID: 7423366379279327969, guid: 6953269087bc3d84681127802389c43a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.2
+      value: 254.25
       objectReference: {fileID: 0}
     - target: {fileID: 7423366379279327969, guid: 6953269087bc3d84681127802389c43a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -488,6 +488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObstacleCourse
       objectReference: {fileID: 0}
+    - target: {fileID: 9013613471812094999, guid: 94e9d184abf1bb24b9d55c84bd93aa5a, type: 3}
+      propertyPath: mainPlayer1
+      value: 
+      objectReference: {fileID: 286944267}
     - target: {fileID: 9013613471814583214, guid: 94e9d184abf1bb24b9d55c84bd93aa5a, type: 3}
       propertyPath: m_RootOrder
       value: 0

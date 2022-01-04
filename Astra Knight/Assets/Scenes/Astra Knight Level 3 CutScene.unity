@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: f2bf9606d52897d49b85e05317d98625, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 617d9be015db68348a623b01ea51a8c5, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17830113, g: 0.248685, b: 0.38426086, a: 1}
+  m_IndirectSpecularColor: {r: 0.47885966, g: 0.80018497, b: 0.89945316, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -291,7 +291,7 @@ RectTransform:
   - {fileID: 890976082}
   - {fileID: 1568557053}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -362,7 +362,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &452789201 stripped
 Transform:
@@ -920,6 +920,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffa0016b7cc32774eb3a0b59cfcf5c9b, type: 3}
+--- !u!1 &893589621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4276602762022766873, guid: ffa0016b7cc32774eb3a0b59cfcf5c9b, type: 3}
+  m_PrefabInstance: {fileID: 893589620}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &893589622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893589621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18a08042f8cfa246a123605cfc2f433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!1 &1137711250
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,6 +971,99 @@ Transform:
   m_Father: {fileID: 1533996324}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1216175458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1216175459}
+  - component: {fileID: 1216175460}
+  m_Layer: 0
+  m_Name: Area Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1216175459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216175458}
+  m_LocalRotation: {x: 0.35679203, y: 0.010939657, z: 0.6008164, w: 0.71526176}
+  m_LocalPosition: {x: 0.5399199, y: 2.3241994, z: 0.8468461}
+  m_LocalScale: {x: 0.20000002, y: 0.2, z: 0.20000003}
+  m_Children: []
+  m_Father: {fileID: 1414341015}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 147.989, y: -90, z: -90}
+--- !u!108 &1216175460
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216175458}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 11.574247, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1226696310
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,7 +1185,7 @@ Transform:
   - {fileID: 185836397}
   - {fileID: 1226696313}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1568557052
 GameObject:
@@ -1160,6 +1271,99 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1533304265266884832, guid: ffa0016b7cc32774eb3a0b59cfcf5c9b, type: 3}
   m_PrefabInstance: {fileID: 617490924}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1742367432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1742367433}
+  - component: {fileID: 1742367434}
+  m_Layer: 0
+  m_Name: Spot Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1742367433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742367432}
+  m_LocalRotation: {x: 0.45575508, y: -0.0000000028419012, z: -0.000000006469309, w: 0.8901052}
+  m_LocalPosition: {x: 0, y: 10.2, z: -7.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 557836159}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 54.227, y: 0, z: 0}
+--- !u!108 &1742367434
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742367432}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 0.03364185, g: 0.763043, b: 0.7924528, a: 1}
+  m_Intensity: 8.2
+  m_Range: 19.74
+  m_SpotAngle: 60
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.42
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1813419110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,7 +1473,7 @@ GameObject:
   - component: {fileID: 1894367776}
   m_Layer: 0
   m_Name: Act 2 Sensor
-  m_TagString: Sensor
+  m_TagString: sensor 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1436,13 +1640,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073382865}
-  m_LocalRotation: {x: 0.40628892, y: -0.651715, z: -0.11634211, w: 0.62981063}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.13680641, y: -0.9608499, z: 0.087059, w: 0.22466049}
+  m_LocalPosition: {x: 2.4387624, y: 2.882055, z: 4.1195045}
+  m_LocalScale: {x: 0.19999997, y: 0.2, z: 0.2}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 21.108, y: -101.1, z: -46.448}
+  m_Father: {fileID: 7423366379083297506}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 18.782, y: -96.084, z: -10.578}
 --- !u!1 &2120204862 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3865270948016458135, guid: 998ae26008d421a4d85b12cad3c7f5c1, type: 3}
@@ -1645,6 +1849,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Astra Knight Act 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3865270948241690915, guid: 998ae26008d421a4d85b12cad3c7f5c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3865270948241690915, guid: 998ae26008d421a4d85b12cad3c7f5c1, type: 3}
+      propertyPath: m_TagString
+      value: level 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3865270948241690918, guid: 998ae26008d421a4d85b12cad3c7f5c1, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1694,6 +1906,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1813419110}
     - target: {fileID: 3865270948241690921, guid: 998ae26008d421a4d85b12cad3c7f5c1, type: 3}
+      propertyPath: sensor1
+      value: 
+      objectReference: {fileID: 1894367774}
+    - target: {fileID: 3865270948241690921, guid: 998ae26008d421a4d85b12cad3c7f5c1, type: 3}
+      propertyPath: sensor2
+      value: 
+      objectReference: {fileID: 1894367774}
+    - target: {fileID: 3865270948241690921, guid: 998ae26008d421a4d85b12cad3c7f5c1, type: 3}
       propertyPath: act1Player
       value: 
       objectReference: {fileID: 7423366379083297497}
@@ -1710,6 +1930,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533996324}
     m_Modifications:
+    - target: {fileID: 4539804813371013404, guid: c3da4b39905f1b346bcbeb99443c438c, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539804813371013404, guid: c3da4b39905f1b346bcbeb99443c438c, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539804813371013404, guid: c3da4b39905f1b346bcbeb99443c438c, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539804813371013404, guid: c3da4b39905f1b346bcbeb99443c438c, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539804813371013409, guid: c3da4b39905f1b346bcbeb99443c438c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6342677998295003358, guid: c3da4b39905f1b346bcbeb99443c438c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1758,10 +1998,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Astra Knight Act 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6342677998295003365, guid: c3da4b39905f1b346bcbeb99443c438c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342677998295003365, guid: c3da4b39905f1b346bcbeb99443c438c, type: 3}
+      propertyPath: m_TagString
+      value: level 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6342677998295003366, guid: c3da4b39905f1b346bcbeb99443c438c, type: 3}
       propertyPath: sensor
       value: 
       objectReference: {fileID: 1813419110}
+    - target: {fileID: 6342677998295003366, guid: c3da4b39905f1b346bcbeb99443c438c, type: 3}
+      propertyPath: sensor1
+      value: 
+      objectReference: {fileID: 1813419110}
+    - target: {fileID: 6342677998295003366, guid: c3da4b39905f1b346bcbeb99443c438c, type: 3}
+      propertyPath: sensor2
+      value: 
+      objectReference: {fileID: 1894367774}
     - target: {fileID: 6342677998295003366, guid: c3da4b39905f1b346bcbeb99443c438c, type: 3}
       propertyPath: act2Player
       value: 
@@ -1917,6 +2173,14 @@ PrefabInstance:
     - target: {fileID: 9193051409201352207, guid: 1bd73be3a85df7d4487035bef2ac86c2, type: 3}
       propertyPath: m_Name
       value: Astra Knight Act 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193051409201352207, guid: 1bd73be3a85df7d4487035bef2ac86c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193051409201352207, guid: 1bd73be3a85df7d4487035bef2ac86c2, type: 3}
+      propertyPath: m_TagString
+      value: level 4
       objectReference: {fileID: 0}
     - target: {fileID: 9193051409201352433, guid: 1bd73be3a85df7d4487035bef2ac86c2, type: 3}
       propertyPath: sensor

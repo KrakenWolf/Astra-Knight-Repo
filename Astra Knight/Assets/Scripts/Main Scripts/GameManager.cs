@@ -8,13 +8,12 @@ public class GameManager : MonoBehaviour
 {
 
     public GameManager gameManager;
-    public Button startButton;
-    public GameObject Trigger;
+    private Button startButton;
+    private GameObject Trigger;
 
-    public GameObject mainPlayer1;
-    public GameObject mainPlayer2;
-    public GameObject bossPlayer;
-    public GameObject cutscenePlayer;
+    private GameObject mainPlayer1;
+    private GameObject bossPlayer;
+    private GameObject cutscenePlayer;
 
     private void Awake()
     {
@@ -26,34 +25,24 @@ public class GameManager : MonoBehaviour
         Object.DontDestroyOnLoad(this.gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void LoadLevel()
     {
         SceneManager.LoadScene(1);
     }
 
-    void OnTriggerEnter(Collider collider)
+    void OnTriggerEnter(Collider other)
     {
-        if (gameObject == mainPlayer1)
+        if (other.gameObject.CompareTag("level 1"))
         {
             SceneManager.LoadScene(2);
         }
-        if (mainPlayer2)
+        if (other.gameObject.CompareTag("level 2"))
         {
             SceneManager.LoadScene(3);
         }
-        if (bossPlayer)
+        if (other.gameObject.CompareTag("level 4"))
         {
             SceneManager.LoadScene(4);
-        }
-        if (cutscenePlayer)
-        {
-            SceneManager.LoadScene(5);
         }
     }
 }

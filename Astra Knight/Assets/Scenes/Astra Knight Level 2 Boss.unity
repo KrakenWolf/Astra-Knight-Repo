@@ -3072,6 +3072,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Astra Knight Boss Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3495423492599314616, guid: 9f2aeffd9540011418a3a5846d48af6f, type: 3}
+      propertyPath: m_TagString
+      value: level 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f2aeffd9540011418a3a5846d48af6f, type: 3}
 --- !u!1001 &4061430814647353791
@@ -3234,3 +3238,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffa0016b7cc32774eb3a0b59cfcf5c9b, type: 3}
+--- !u!1 &4986656754592095822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4276602762022766873, guid: ffa0016b7cc32774eb3a0b59cfcf5c9b, type: 3}
+  m_PrefabInstance: {fileID: 4986656754592095821}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4986656754592095823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4986656754592095822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18a08042f8cfa246a123605cfc2f433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  startButton: {fileID: 0}
+  Trigger: {fileID: 0}
+  mainPlayer1: {fileID: 0}
+  bossPlayer: {fileID: 4136377286053548416}
+  cutscenePlayer: {fileID: 0}

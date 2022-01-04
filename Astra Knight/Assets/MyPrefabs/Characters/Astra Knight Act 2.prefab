@@ -968,7 +968,7 @@ GameObject:
   - component: {fileID: 3865270948241690921}
   m_Layer: 0
   m_Name: Astra Knight Act 2
-  m_TagString: level 4
+  m_TagString: level 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -981,7 +981,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3865270948241690915}
   m_LocalRotation: {x: 0.019525472, y: 0.48769492, z: -0.0109111015, w: 0.87272763}
-  m_LocalPosition: {x: 16.4, y: -3.9, z: 22.8}
+  m_LocalPosition: {x: 20.3204, y: -4.106078, z: 25.21237}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4028925558918442455}
@@ -1073,7 +1073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbaa9a4a317a54c4097f8c360fea19c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensor: {fileID: 0}
+  sensor1: {fileID: 0}
   act1Player: {fileID: 0}
   act2Player: {fileID: 3865270948241690915}
   act3Player: {fileID: 0}

@@ -1732,7 +1732,7 @@ PrefabInstance:
     - target: {fileID: 6035349240571854018, guid: cd1abb4d8c1da41419b9734abcdf2c68, type: 3}
       propertyPath: cutscenePlayer
       value: 
-      objectReference: {fileID: 5308436088481557189, guid: 40597e68c85ae824b8ceaa73ce40dfb3, type: 3}
+      objectReference: {fileID: 9193051409201352207, guid: 1bd73be3a85df7d4487035bef2ac86c2, type: 3}
     - target: {fileID: 6035349240571854019, guid: cd1abb4d8c1da41419b9734abcdf2c68, type: 3}
       propertyPath: m_Name
       value: GameManager

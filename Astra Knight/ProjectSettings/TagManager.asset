@@ -11,6 +11,7 @@ TagManager:
   - level 2
   - level 3
   - level 4
+  - sensor 2
   layers:
   - Default
   - TransparentFX

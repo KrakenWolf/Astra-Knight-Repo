@@ -8,8 +8,9 @@ public class AstraAnim : MonoBehaviour
 
     private float speed = 3f;
     private float speed2 = 0.5f;
+    private float speed3 = 2f;
 
-    public GameObject sensor;
+    public GameObject sensor1;
 
     public GameObject act1Player;
     public GameObject act2Player;
@@ -27,7 +28,7 @@ public class AstraAnim : MonoBehaviour
         CutSceneAnim();
         act1Player.transform.Translate(Vector3.forward * speed * Time.deltaTime);
         act2Player.transform.Translate(Vector3.forward * speed2 * Time.deltaTime);
-        act3Player.transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        act3Player.transform.Translate(Vector3.forward * speed3 * Time.deltaTime);
     }
 
     void CutSceneAnim()
@@ -47,24 +48,18 @@ public class AstraAnim : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if (act1Player.transform)
+        if (other.gameObject.CompareTag("Sensor"))
         {
             act1Player.SetActive(false);
             act2Player.SetActive(true);
         }
-        if(act2Player.transform)
+        if (other.gameObject.CompareTag("sensor 2"))
         {
-            StartCoroutine("WaitForSec");
+            act1Player.SetActive(false);
+            act2Player.SetActive(false);
+            act3Player.SetActive(true);
         }
-    }
-
-    IEnumerator WaitForSec()
-    {
-        yield return new WaitForSeconds(2);
-        act2Player.SetActive(false);
-        act3Player.SetActive(true);
-        StartCoroutine("WAitForSec");
     }
 }

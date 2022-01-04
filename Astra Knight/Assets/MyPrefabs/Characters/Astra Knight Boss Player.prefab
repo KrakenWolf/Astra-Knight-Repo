@@ -5604,7 +5604,7 @@ GameObject:
   - component: {fileID: 3495423492599314623}
   m_Layer: 0
   m_Name: Astra Knight Boss Player
-  m_TagString: level 3
+  m_TagString: level 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
